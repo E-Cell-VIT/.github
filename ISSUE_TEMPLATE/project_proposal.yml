@@ -1,0 +1,143 @@
+name: Project Proposal
+description: Propose a new E-Cell project, platform, technical initiative or innovation.
+title: "[Proposal]: "
+labels:
+  - "type:project"
+  - "status:idea"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Project Proposal
+
+        Use this form for substantial initiatives that require planning, coordination or technical resources.
+
+        Examples include:
+        - New platforms
+        - Event technology
+        - Automation systems
+        - AI/ML projects
+        - Open-source initiatives
+        - Innovation projects
+        - Community platforms
+
+  - type: input
+    id: project-name
+    attributes:
+      label: Project name
+      placeholder: E-Cell Event Platform
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What problem are you trying to solve?
+      placeholder: Clearly describe the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: target-users
+    attributes:
+      label: Target users
+      description: Who will use or benefit from this project?
+      placeholder: Students, founders, event organizers, contributors, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe the proposed product, system or initiative.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Expected impact
+      description: What change do you expect this project to create?
+    validations:
+      required: true
+
+  - type: textarea
+    id: mvp
+    attributes:
+      label: Minimum Viable Product
+      description: What is the smallest useful version that can be built?
+      placeholder: |
+        MVP should:
+        - ...
+        - ...
+        - ...
+
+  - type: textarea
+    id: technical
+    attributes:
+      label: Technical requirements
+      description: Mention expected technologies, infrastructure, APIs, databases or other technical requirements.
+
+  - type: textarea
+    id: team
+    attributes:
+      label: Team requirements
+      description: What roles or skills are required?
+      placeholder: |
+        Frontend:
+        Backend:
+        Design:
+        Product:
+        Marketing:
+        Other:
+
+  - type: input
+    id: timeline
+    attributes:
+      label: Estimated timeline
+      placeholder: 4-6 weeks
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Mention external services, teams, approvals or infrastructure required.
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and constraints
+      description: What could prevent or significantly affect the project?
+
+  - type: textarea
+    id: success
+    attributes:
+      label: Success metrics
+      description: How will we know the project succeeded?
+      placeholder: |
+        Example:
+        - 500 users
+        - 80% registration completion
+        - 50 active contributors
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Add relevant research, competitors, papers, mockups or related projects.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Proposal checklist
+      options:
+        - label: I have clearly described the problem.
+          required: true
+        - label: I have identified the target users.
+          required: true
+        - label: I have considered the MVP.
+          required: true
+        - label: I have searched for related projects or proposals.
+          required: true

@@ -1,0 +1,66 @@
+name: Documentation
+description: Report missing, incorrect or unclear documentation.
+title: "[Docs]: "
+labels:
+  - "type:documentation"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Good documentation is infrastructure.
+
+        Thank you for helping make our projects easier to understand and maintain.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Documentation category
+      options:
+        - README
+        - Installation
+        - Configuration
+        - API
+        - Architecture
+        - Tutorial
+        - Contribution Guide
+        - Deployment
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      description: Describe what is missing, incorrect or unclear.
+    validations:
+      required: true
+
+  - type: textarea
+    id: location
+    attributes:
+      label: Documentation location
+      description: Provide the file, section or URL where the issue exists.
+      placeholder: README.md → Installation
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+      description: If you know how it should be improved, explain it here.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add relevant screenshots, examples or references.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched for existing documentation issues.
+          required: true
